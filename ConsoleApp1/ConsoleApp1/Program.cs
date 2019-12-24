@@ -21,8 +21,9 @@ namespace ConsoleApp1
                 if (d == "+") { Console.WriteLine(x + y); }
                 if (d == "-") { Console.WriteLine(x - y); }
                 if (d == "*") { Console.WriteLine(x * y); }
-                if (d == "/") { Console.WriteLine(x / y); }
-                Console.WriteLine("exit 1 \nagain 2 \n");
+                if (d == "/" && y!=0) { Console.WriteLine(x / y); }
+                else { Console.WriteLine("You can't del on 0"); }
+                Console.WriteLine("exit 1 \nagain 2");
                 f = Convert.ToInt32(Console.ReadLine());
             } while (f != 1);
         }
