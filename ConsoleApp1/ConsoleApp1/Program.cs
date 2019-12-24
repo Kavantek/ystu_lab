@@ -14,7 +14,7 @@ namespace ConsoleApp1
             string d,d2=" ";
             do
             {
-                Console.WriteLine("Ready");
+                Console.WriteLine("Programm ready! Write symbols one by one with press enter beetwen");
                 x = Convert.ToInt32(Console.ReadLine());
                 d = Console.ReadLine();
                 y = Convert.ToInt32(Console.ReadLine());
@@ -51,7 +51,7 @@ namespace ConsoleApp1
                     }
                 } while (d2 != "=");
                 Console.WriteLine(s+"\n");
-                Console.WriteLine("exit 1 \nagain 2 \n");
+                Console.WriteLine("Exit 1 \nAgain 2 \n");
                 f = Convert.ToInt32(Console.ReadLine());
             } while (f != 1);
         }
